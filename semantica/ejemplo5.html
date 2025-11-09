@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safari + VoiceOver no interpreta elementos de lista</title>
+    <link rel="stylesheet" href="../css/semantica/ejemplo5.css">
+</head>
+<body>
+    <h1>Ejemplo Safari + VoiceOver no interpreta elementos de lista según CSS</h1>
+    <h2>Ejemplo inicial</h2>
+        <ul>
+            <li>elemento uno</li>
+            <li>elemento dos</li>
+            <li>elemento tres</li>
+        </ul>   
+    <h2>Solución 1: role de lista para la lista</h2>
+        <ul role="list">
+            <li>elemento uno</li>
+            <li>elemento dos</li>
+            <li>elemento tres</li>
+        </ul> 
+
+
+    <h2>Solución 2: list-style-type vacío</h2>
+        <ul class="solucion2">
+            <li>elemento uno</li>
+            <li>elemento dos</li>
+            <li>elemento tres</li>
+        </ul> 
+
+    <h2>Interpretación correcta cuando la lista está dentro de un nav</h2> 
+    <nav>
+    <ul>
+        <li>elemento uno</li>
+        <li>elemento dos</li>
+        <li>elemento tres</li>
+    </ul>
+    </nav>
+    
+</body>
+</html>
