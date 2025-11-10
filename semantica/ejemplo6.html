@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enlaces ambiguos</title>
+    <link rel="stylesheet" href="../css/semantica/ejemplo5.css">
+</head>
+<body>
+    <h1>Enlaces ambiguos. Nuestro Blog</h1>
+    
+  
+  <article>
+    <h2>La subida del precio del café</h2>
+    <p>Un nuevo informe indica que los precios seguirán subiendo...</p>
+    <a href="/noticia/cafe">Leer más</a>
+  </article>
+  
+  <article>
+    <h2>Nuevas políticas de teletrabajo</h2>
+    <p>La empresa anuncia un modelo híbrido permanente...</p>
+    <a href="/noticia/teletrabajo">Leer más</a>
+  </article>
+
+  <article>
+    <h2>Final del campeonato de fútbol</h2>
+    <p>El equipo local se lleva la copa en una final histórica...</p>
+    <a href="/noticia/futbol">Leer más</a>
+  </article>
+
+  <hr>
+
+  <h2>Consecuencias:</h2>
+  
+  <p>
+    Un usuario ciego que quiera saber qué artículos hay, 
+    abrirá su menú de "Lista de Enlaces" y escuchará:
+  </p>
+  
+  <ol>
+    <li>"Leer más"</li>
+    <li>"Leer más"</li>
+    <li>"Leer más"</li>
+  </ol>
+  
+  <p>
+    Esta lista es <strong>100% inútil</strong>. El usuario no sabe qué enlace 
+    lleva a qué noticia. Ha perdido por completo la capacidad 
+    de escanear la página.
+  </p>
+
+  <h3>La Solución Correcta (2 Opciones)</h3>
+
+  <h4>Solución 1 (Mejor): Hacer que el título sea el enlace</h4>
+  <p>Es lo más semántico y claro.</p>
+  <pre>
+
+      &lt;a href="/noticia/cafe"&gt;La subida del precio del café&lt;/a&gt;
+
+  </pre>
+
+  <a href="/noticia/cafe">La subida del precio del café</a>
+
+  <h4>Solución 2 (Si el diseño te obliga a tener "Leer más"):</h4>
+  <p>Puedes "arreglar" el enlace ambiguo con <strong>ARIA</strong> (Accessible Rich Internet Applications), 
+  dándole un nombre accesible.</p>
+  
+  <pre>
+    &lt;a href="/noticia/cafe" aria-label="Leer más sobre La subida del precio del café"&gt;
+       Leer más
+    &lt;/a&gt;
+  </pre>
+  <p>
+    El usuario <strong>no</strong> escuchará "Leer más". 
+    Escuchará el texto completo del <code>aria-label</code>.
+    <a href="/noticia/cafe" aria-label="Leer más sobre la subida del precio del café">Leer más</a>
+  </p>
+</body>
+</html>
+</body>
+</html>

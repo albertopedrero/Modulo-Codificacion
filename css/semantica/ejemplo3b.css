@@ -1,0 +1,25 @@
+.cabecera { 
+    background: #eee; 
+    padding: 10px; 
+    border-bottom: 1px solid #ccc; 
+}
+.navegacion { 
+    background: #333; 
+    color: white; 
+    padding: 10px; 
+}
+.navegacion a { 
+    color: #FFF;}
+.contenido { 
+    padding: 15px; 
+}
+.lateral {
+    padding: 15px; 
+    background: #f9f9f9; 
+    }
+.pie { clear: both; 
+    background: #555; 
+    color: white; 
+    padding: 20px; 
+    text-align: center; 
+}

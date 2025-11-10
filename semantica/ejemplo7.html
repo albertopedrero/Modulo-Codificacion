@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Imágenes. El Desastre del 'alt'</title>
+  <style>
+    .card { border: 1px solid #ccc; width: 200px; padding: 10px; }
+    .profile-pic { width: 100%; }
+    .divider { width: 100%; height: 5px; background: blue; }
+  </style>
+</head>
+<body>
+
+  <h1>Perfil de Empleado</h1>
+
+  <div class="card">
+    <img src="ana-garcia.jpg" class="profile-pic">
+    <h2>Ana García</h2>
+    <p>Jefa de Ingeniería</p>
+    
+    <img src="linea-azul.png" class="divider" alt="Línea azul decorativa">
+
+    <a href="mailto:ana.garcia@empresa.com">
+      <img src="icono-email.png" alt=""> </a>
+  </div>
+
+  <hr>
+
+  <h2>Consecuencias:</h2>
+  
+  <p>Un usuario ciego que visite esta página escuchará:</p>
+  
+  <ol>
+    <li>(Al llegar a la foto de perfil): "ana-garcia.jpg" (el lector de pantalla lee el nombre del archivo, ¡terrible!) o, peor, la ignora.</li>
+    <li>(Al llegar a la línea azul): "Imagen, Línea azul decorativa". Esto es ruido. Es molesto e interrumpe el flujo de lectura sin aportar valor.</li>
+    <li>(Al llegar al icono de email): "Enlace". ¿Enlace a qué? No tiene texto. Es un enlace misterioso e inútil.</li>
+  </ol>
+  
+  <h3>La Solución Correcta</h3>
+  
+  <pre>
+    &lt;!-- 1. Informativa: Describe la imagen --&gt;
+    &lt;img src="ana-garcia.jpg" class="profile-pic" 
+         alt="Foto de perfil de Ana García"&gt;
+    
+    &lt;h2&gt;Ana García&lt;/h2&gt;
+    &lt;p&gt;Jefa de Ingeniería&lt;/p&gt;
+    
+    &lt;!-- 2. Decorativa: Alt vacío para que sea ignorada --&gt;
+    &lt;img src="linea-azul.png" class="divider" alt=""&gt;
+
+    &lt;!-- 3. Funcional: El 'alt' describe la ACCIÓN --&gt;
+    &lt;a href="mailto:ana.garcia@empresa.com"&gt;
+      &lt;img src="icono-email.png" alt="Enviar email a Ana García"&gt;
+    &lt;/a&gt;
+  </pre>
+  <p>
+    Con la solución correcta, el usuario escucha: "Imagen, Foto de perfil de Ana García", "Encabezado Nivel 2, Ana García", "Jefa de Ingeniería", "Enlace, Enviar email a Ana García".
+    La experiencia es <strong>idéntica</strong> a la de un usuario visual.
+  </p>
+  
+</body>
+</html>

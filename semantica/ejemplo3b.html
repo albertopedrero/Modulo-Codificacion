@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Página sin Landmarks. El Desastre de la "Div-itis". </title>
+  <link rel="stylesheet" href="../css/semantica/ejemplo3b.css">
+</head>
+<body>
+
+  <div class="cabecera">
+    <h1>Logo y Título del Sitio</h1>
+  </div>
+  
+  <div class="navegacion">
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Servicios</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </div>
+
+  <div class="contenido">
+    <h2>Artículo Principal</h2>
+    <p>Este es el contenido más importante de la página...</p>
+  </div>
+  
+  <div class="lateral">
+    <h3>Artículos relacionados</h3>
+    <p>Contenido secundario...</p>
+  </div>
+
+  <div class="pie">
+    <p>&copy; Módulo codificación.</p>
+  </div>
+
+  <hr>
+
+  <h2>Consecuencias:</h2>
+  
+  <p>
+    Un usuario ciego que visite esta página y abra su menú de "Landmarks"
+    escuchará: <strong>"No hay puntos de referencia en esta página."</strong>
+  </p>
+  
+  <p>
+    No puede saltar al contenido principal. No puede saltar al menú. 
+    No puede omitir el pie de página. 
+  </p>
+  <p>
+    Su única opción es <strong>leer todo</strong>, de arriba a abajo, 
+    cada vez que carga una nueva página. Es increíblemente lento, 
+    frustrante y una barrera masiva. La web se vuelve inutilizable.
+  </p>
+
+  <h3>La Solución Correcta</h3>
+  <p>
+    Simplemente reemplazando los <code>&lt;div&gt;</code> por sus 
+    equivalentes semánticos:
+    <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, 
+    <code>&lt;aside&gt;</code> y <code>&lt;footer&gt;</code>.
+    El marcado se vuelve navegable al instante, sin cambiar ni una línea de CSS.
+  </p>
+
+</body>
+</html>
