@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios accesible</title>
+</head>
+<body>
+    <h1>Ejemplo accesible sobre etiquetados de campos de formulario</h1>
+    <form>
+        <h2>Etiqueta label con atributo for + atributo id en el input</h2>
+
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre">
+
+
+        <h2>Uso de aria-labelledby</h2>
+        <span id="input-label">Nombre</span>
+        <input type="text" aria-labelledby="input-label">
+        
+        <h2>Uso de aria-label</h2>
+        <input type="text" aria-label="Apellidos">
+    </form>
+
+<nav>
+    <ul>
+        <li><a href="./formularios_fieldset.html">Ejemplo de fieldset</a></li>
+        <li><a href="./formularios_no_accesible.html">Volver ejemplo formularios no accesible</a></li>
+        <li><a href="../index.html">Volver al índice</a></li>
+    </ul>
+  </nav>
+</body>
+</html>

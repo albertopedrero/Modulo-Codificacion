@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios no accesible</title>
+</head>
+<body>
+    <h1>Ejemplo no accesible sobre etiquetados de campos de formulario</h1>
+    <form>
+        <label>Nombre</label>
+        <input type="text">
+
+        <div>Nombre</div>
+        <input type="text" >
+
+        <div>Nombre
+            <input type="text" >
+        </div>
+
+        <div for="nombre">Nombre
+        <input type="text" id="nombre" >
+        </div>
+    </form>
+
+<nav>
+    <ul>
+        <li><a href="./formularios_accesible.html">Ejemplo de formularios accesible</a></li>
+        <li><a href="../index.html">Volver al índice</a></li>
+    </ul>
+  </nav>
+</body>
+</html>
