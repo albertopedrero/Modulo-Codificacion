@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saltar navegación</title>
+    <link rel="stylesheet" href="./css/css104.css">
+</head>
+<body>
+    <a href="#main" class="skip_navigation">Saltar navegación</a>
+    <header>
+        <div class="logo">Nombre y logo del sitio web</div>
+        <nav aria-label="Navegación Principal">
+            <ul>
+                <li><a href="#">Opción 1</a></li>
+                <li><a href="#">Opción 2</a></li>
+                <li><a href="#">Opción 3</a></li>
+                <li><a href="#">Opción 4</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main">
+        
+        <h1>Uso de posicionamiento para saltar navegación</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, consequuntur, corporis dolore asperiores ipsam nobis eaque totam praesentium impedit quo eius distinctio fugiat veritatis facilis. Maiores ab illum praesentium est!</p>
+
+        <p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, consequuntur, corporis dolore asperiores ipsam nobis eaque totam praesentium impedit quo eius distinctio fugiat veritatis facilis. Maiores ab illum praesentium est!</p>
+       
+        <h2 class="explicacion">Explicación</h2>
+        <p>En este ejemplo implementamos ya la funcionalidad de saltar al contenido principal. El enlace tiene las siguientes propiedades:</p>
+        <ul>
+            <li>position: absolute // para sacarlo del flujo principal.</li>
+            <li>clip-path: inset(50%) // recortamos el elemento para que no sea visible. </li>
+            <li>clip: rect(1px, 1px, 1px, 1px) // similar al anterior. Se mantiene por compatibilidad con navegadore antiguos. Requiere que el elemento tenga position absolute o fixed.</li>
+            <li>height: 1px</li>
+            <li>width: 1px</li>
+            <li>overflow: hidden // aquel contenido que excede el área del elemento no es mostrado.</li>
+            <li>white-space: nowrap // mostraría todo el contenido en una línea.</li>
+        </ul>
+        <p>Cuando el enlace recibe el foco (al navegar por teclado), las propiedades del elemento son:</p>
+        <ul>
+            <li>clip-path: inset(0%); // no recortamos el elemento  </li>
+            <li>clip: auto </li>
+            <li>height: auto</li>
+            <li>width: auto</li>
+            <li>top: 0 // lo podemos colocar en la parte superior.</li>
+            <li>otras propiedades que nos permitan dar el estilo deseado.</li>
+        </ul>
+    </main>
+    <a href="css103.html">Anterior</a> // 
+    <a href="../index.html"> Índice</a>&nbsp; //  
+
+    <a href="css105.html">Siguiente</a>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento CSS</title>
+    <link rel="stylesheet" href="./css/css103.css">
+</head>
+<body>
+
+    <main>
+        <h1>Posicionamiento CSS</h1>
+        <p>Hay varios tipos de posicionamiento. En este documento hablaremos de posicionamiento absoluto y relativo.</p>
+
+        <!-- Flujo normal del documento -->
+        <section aria-labelledby="flujo_normal">
+            <h2 id="flujo_normal">Flujo normal de contenido</h2>
+            <div class="caja caja1 ">Box 1 content</div>
+            <div class="caja caja2 ">Box 2 content (a bit longer)</div>
+            <div class="caja caja3 ">Box 3 content</div>
+            <div class="caja caja4 ">Box 4 content</div>
+        </section>
+
+        <!-- Posicionamiento absoluto -->
+        <section aria-labelledby="posicionamiento_absoluto">
+            <h2 id="posicionamiento_absoluto">Posicionamiento absoluto</h2>
+            <div class="caja caja1 caja1abs">Box 1 content</div>
+            <div class="caja caja2 caja2abs">Box 2 content (a bit longer)</div>
+            <div class="caja caja3 caja3abs">Box 3 content</div>
+            <div class="caja caja4 caja3abs">Box 4 content</div>
+            <h3>Posicionamiento absoluto con cordenadas top y left</h3>
+            <div class="caja caja1 caja1abs_top_left">Box 1 content posicionado absoluto con top y left</div>
+            <div class="caja caja2 caja2abs">Box 2 content (a bit longer)</div>
+            <div class="caja caja3 caja3abs">Box 3 content</div>
+            <div class="caja caja4 caja3abs">Box 4 content</div>
+        </section>
+
+        <!-- Posicionamiento relativo -->
+        <section aria-labelledby="posicionamiento_relativo">
+            <h2 id="posicionamiento_relativo">Posicionamiento relativo</h2>
+            <div class="caja caja1">Box 1 content</div>
+            <div class="caja caja2 caja2rel">Contenido de la caja 2 posicionada de manera relativa</div>
+            <div class="caja caja3">Box 3 content</div>
+            <div class="caja caja4">Box 4 content</div>
+        </section>
+
+        <!-- Posicionamiento relativo -->
+        <section aria-labelledby="relativo_absoluto">
+            <h2 id="relativo_absoluto">Posicionamiento relativo</h2>
+            <div class="caja caja1 caja1rel_abs">Box 1 content. Relative positioning. Box 2 is inside box 1.
+                <div class="caja caja2 caja2rel_abs">Box 2 absolute positioning</div>
+            </div>
+
+
+        </section>
+
+        <h2 class="explicacion">Explicación</h2>
+        <p>En el flujo normal del documento, las cajas aparecen una a continuación de la otra. Al ser elementos de bloque, ocupan todo el ancho de la ventana del navegador y se muestran una debajo de la otra.</p>
+        <h3>Explicación posicionamiento absoluto</h3>
+        <p>La caja 1 tiene un posicionamiento absoluto. Es eliminada del flujo del documento, es decir, las demás cajas se comportan como si no existiera, ocupando su lugar (la caja 2 está en el lugar que ocupaba la caja 1). Además, el ancho de la caja 1 se reduce al ancho del contenido (no al de toda la ventana del navegador).</p>
+        <p>En el segundo caso (absoluto con top y left), la caja 1 sigue teniendo posicionamiento absoluto, pero está desplazada respecto a la posición 0:0 (esquina superior izquierda de la ventana del navegador).</p>
+        <h3>Explicación posicionamiento relativo</h3>
+        <p>La caja 2 tiene un posicionamiento relativo. No es eliminada del flujo del documento, es decir, las demás cajas se comportan como si estuviera en su sitio. El ancho de la caja 2 sigue siendo el original (lo que provoca un scroll horizontal). La caja 2 está desplazada respecto a la posición que tendría que ocupar originalmente.</p>
+        <p>En el último caso, la caja 1 contiene a la caja 2. Para que la caja 2 se posicione de respecto a la caja 1 -queremos que en su esquina inferior derecha- la caja 1 debe tener posicionamiento relativo y la caja 2 absoluto. En este caso, las coordenadas se calculan no respecto a la posición 0:0 (esquina superior izquierda de la ventana del navegador), sino al elemento relativo que lo contiene.</p>
+
+    </main>
+    <a href="css102.html">Anterior</a> // 
+    <a href="../index.html"> Índice</a>&nbsp; //  
+
+    <a href="css104.html">Siguiente</a>
+</body>
+</html>

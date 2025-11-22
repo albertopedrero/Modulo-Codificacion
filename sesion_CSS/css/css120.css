@@ -1,0 +1,114 @@
+
+:root {
+    --verde-oscuro: #175C37;
+    --amarillo: rgb(255, 251, 0);
+    --negro: #000000;
+    --rojo-sangre: rgb(166, 0, 0);
+}
+body {
+    margin: 1rem;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+}
+
+.skip_navigation {
+    position: absolute;
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.skip_navigation:focus {
+    clip-path: inset(0%);
+    clip: auto;
+    height: auto;
+    width: auto;
+    top: 0;
+    padding: 1rem;
+    background-color: var(--verde-oscuro);
+}
+header {
+    margin-top: 2rem;
+}
+.logo {
+    font-size: 4rem;
+}
+h1{
+    font-size: 3rem;
+}
+button {
+    min-width: 44px;
+    min-height: 44px;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+h2.explicacion{
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid var(--negro);
+    color: var(--rojo-sangre);
+    font-size: 2.5rem;
+}
+
+p {
+font-size: 1.3rem;
+}
+
+:focus-visible, video:focus-within{
+    outline: 0.25em solid var(--verde-oscuro);
+    outline-offset: 0.25em;
+  }
+  
+a:link{
+    color: #175C37;
+    text-decoration: underline;
+}
+a:visited {
+    color: #175C37;
+}
+a:hover {
+    color: #175C37;
+    background-color: var(--amarillo);
+    text-decoration: none;
+}
+a:active {
+    color:#ffffff;
+}
+
+.audio {
+    width: 800px;
+}
+
+video::cue(v[voice="Ana"]) {
+    color: var(--amarillo);
+    background-color: var(--verde-oscuro);
+}
+
+video::cue(v[voice="Juan"]) {
+    color: var(--verde-oscuro);
+    background-color: var(--amarillo);
+}
+video::cue(em){
+    color: var(--rojo-sangre);
+}
+video::cue(.sorpresa){
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .animacion {
+        animation: none;
+    }
+}
+
+
+

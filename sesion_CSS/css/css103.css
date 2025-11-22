@@ -1,0 +1,74 @@
+
+
+body {
+    margin: 1rem;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+}
+h1{
+    font-size: 3rem;
+}
+
+
+
+h2.explicacion{
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid #000000;
+    color: rgb(166, 0, 0);
+    font-size: 2.5rem;
+}
+h3 {
+    font-size: 2rem;
+}
+p {
+font-size: 1.3rem;
+}
+.caja {
+    border: 3px solid #222222;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.caja1 {
+    background-color: antiquewhite;
+}
+.caja2 {
+    background-color: aqua;
+}
+.caja3 {
+    background-color: rgb(232, 123, 181);
+}
+.caja4 {
+    background-color: greenyellow;
+}
+.caja1abs {
+    margin: 0 1rem;
+    position: absolute;
+}
+
+.caja1abs_top_left {
+    margin: 0 1rem;
+    position: absolute;
+    top: 40px;
+    left: 800px;
+}
+
+.caja2rel {
+    position: relative;
+    top: 55px;
+    left: 125px;
+}
+
+.caja1rel_abs {
+    position: relative;
+    height: 200px;
+}
+.caja2rel_abs {
+    position: absolute;
+    margin: 0;
+    bottom: 0;
+    right: 0;
+
+}

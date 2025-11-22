@@ -1,0 +1,119 @@
+
+
+body {
+    margin: 1rem;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+}
+
+.skip_navigation {
+    position: absolute;
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.skip_navigation:focus {
+    clip-path: inset(0%);
+    clip: auto;
+    height: auto;
+    width: auto;
+    top: 0;
+    padding: 1rem;
+    background-color: rgb(255, 251, 0);
+}
+header {
+    margin-top: 2rem;
+}
+.logo {
+    font-size: 4rem;
+}
+h1{
+    font-size: 3rem;
+}
+button {
+    min-width: 44px;
+    min-height: 44px;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+h2.explicacion{
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid #000000;
+    color: rgb(166, 0, 0);
+    font-size: 2.5rem;
+}
+
+p {
+font-size: 1.3rem;
+}
+
+:focus-visible {
+    outline: 0.25em solid #175C37;
+    outline-offset: 0.25em;
+  }
+  
+a:link{
+    color: #175C37;
+    text-decoration: underline;
+}
+a:visited {
+    color: #175C37;
+}
+a:hover {
+    color: #175C37;
+    background-color: yellow;
+    text-decoration: none;
+}
+a:active {
+    color:#ffffff;
+}
+
+a[href$=".pdf"]::after {
+    content: ""; 
+    display: inline-block; 
+    width: 20px; 
+    height: 20px; 
+    background-image: url('../images/pdf.png');
+    /* Icono tomado de <a href="https://www.flaticon.com/free-icons/pdf" title="pdf icons">Pdf icons created by Dimitry Miroliubov - Flaticon</a>*/
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    margin-left: 5px;
+    vertical-align: middle;
+  }
+
+a[href$=".xls"]::after{
+    background-image: url('../images/xls.png');
+    /* <a href="https://www.flaticon.com/free-icons/xls" title="xls icons">Xls icons created by Roman Káčerek - Flaticon</a>*/
+    background-size: contain;
+    display: inline-block;
+    content: "";
+    height: 20px;
+    width: 20px;
+}
+
+
+
+a[target="_blank"]::after {
+   content: ' (Abre en ventana nueva)'
+    }
+
+a.icono[target="_blank"]::after {
+    background-image: url('../images/new-tab.png');
+    /* <a href="https://www.flaticon.com/free-icons/new-window" title="new window icons">New window icons created by Grand Iconic - Flaticon</a>*/
+    background-size: contain;
+    display: inline-block;
+    content: "";
+    height: 20px;
+    width: 20px;
+}
+
+
+
+
+
+

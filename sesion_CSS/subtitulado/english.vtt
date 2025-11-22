@@ -1,0 +1,20 @@
+WEBVTT
+
+00:00:00.100 --> 00:00:05.500 
+<v Ana> (Ana) When it comes to styles, 
+Did you know you can add <em>styles</em> to your video captions?</v>
+
+00:00:06.000 --> 00:00:09.500
+<v Juan> (Juan) <c.sorpresa>ehhh Really? </c>I did'nt know about it.
+Tell me, please</v>
+
+00:00:10.100 --> 00:00:16.000
+<v Ana>(Ana) There are different tags you can use to add styles
+if you combine them properly in a .vtt file</v>
+
+00:00:16.900 --> 00:00:18.200
+<v Juan> (Juan) .vtt file? What's that?</v>
+
+00:00:18.600 --> 00:00:22.900
+<v Ana> (Ana) It's a text file where you write the content 
+you what to show as subtitles...</v>
