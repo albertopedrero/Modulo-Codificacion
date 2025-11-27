@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/disclosure-aria.css">
+    <script src="./js/disclosure-aria.js" defer></script>
+
+</head>
+<body>
+<div class="disclosure-widget">
+  <button class="trigger" aria-expanded="false" aria-controls="panel">
+    <svg width="12" height="8" aria-hidden="true" viewBox="-2 -2 14 12">
+      <g fill="none" transform="rotate(-90 6 4)">
+        <path fill="currentColor" d="M1.41.59l4.59 4.58 4.59-4.58 1.41 1.41-6 6-6-6z" />
+        <path d="M-6-8h24v24h-24z" />
+      </g>
+    </svg>
+    <span>Valores nutricionales</span>
+  </button>
+  <div class="panel" id="panel" hidden>
+    Aquí vendrá la tabla con los valores nutricionales
+  </div>
+</div>
+</body>
+</html>

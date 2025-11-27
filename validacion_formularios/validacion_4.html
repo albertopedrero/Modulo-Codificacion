@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario Accesible</title>
+  <link rel="stylesheet" href="styles4.css">
+</head>
+<body>
+    <form novalidate>
+        <h2>Crear cuenta</h2>
+
+        <div><label for="nombre-usuario">
+            <span>Nombre de usuario</span>
+            <input id="nombre-usuario" type="text" aria-required="true" aria-invalid="false" aria-describedby="nombre-usuario-error">
+      
+          </label>
+          <p class="mensaje mensaje-error" id="nombre-usuario-error" aria-live="assertive"></p>
+        </div>
+        <div><label for="password-input">
+            <span>Contraseña</span>
+            <input id="password" type="password" aria-required="true" aria-invalid="false" aria-describedby="password-error requisitos-password">
+          </label>
+          <p class="mensaje mensaje-error" id="password-error-mensaje" aria-live="assertive"></p>
+          <div id="requisitos-password" class="menaje-aviso">
+            <p>La contraseña debe tener: </p>
+            <ul>
+              <li>Al menos 8 caracteres.</li>
+              <li>Combinación de mayúsculas y minúsculas.</li>
+              <li>Al menos un número.</li>
+              <li>Al menos un carácter especial como $ * & </li>
+            </ul>
+          </div>
+        </div>
+      
+        <input type="button" value="Crear cuenta" class="button" id="submit">
+      
+      </form>
+      <br><a href="../../index.html#javascript">Volver al índice</a>
+
+  <script src="script4.js"></script>
+</body>
+</html>

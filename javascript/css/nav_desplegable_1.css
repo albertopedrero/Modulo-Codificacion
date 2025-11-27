@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.menu li {
+  position: relative;
+}
+
+
+/* Estilos para los enlaces y botones */
+.menu a, .menu button, .spanButton {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Asegurar que haya un foco visible */
+.menu button:focus, .menu a:focus {
+  outline: 2px solid #007BFF;
+}
+
+/* Flecha animada */
+.arrow {
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+
+/* Por defecto, el dropdown es visible si no hay JavaScript */
+.dropdown-content {
+  position: absolute;
+  background: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  list-style: none;
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Si JavaScript está habilitado, se oculta el dropdown (esto se activará dinámicamente) */
+.js-enabled .dropdown-content {
+  display: none;
+}
+
+/* Cuando el dropdown está activo */
+li.dropdown .show .arrow {
+  transform: rotate(180deg);
+}
+
+.dropdown.show .dropdown-content {
+  display: block;
+}

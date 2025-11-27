@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas ordenables</title>
+    <link rel="stylesheet" href="tablas2.css">
+</head>
+<body>
+    <header>
+        <h1>Tablas</h1>
+    </header>
+    <main>
+        <div role="status" class="visually-hidden"></div>
+
+        <h2>Tabla con campos ordenables </h2>
+        <table>
+            <caption>Ciudades más pobladas</caption>
+            <thead>
+                <tr>
+                    <th>
+                        <button class="sort" tabindex="0">
+                            Ciudad
+                            <svg width="13" viewBox="0 0 126 171">
+                              <path d="M62.7 3.9 6 70l114-.5z"/>
+                              <path d="M63 166.5 6 100.6h114z"/>
+                            </svg>
+                          </button>
+                    </th>
+                    <th>
+                            <button class="sort" tabindex="0">
+                              Población
+                              <svg width="13" viewBox="0 0 126 171">
+                                <path d="M62.7 3.9 6 70l114-.5z"/>
+                                <path d="M63 166.5 6 100.6h114z"/>
+                              </svg>
+                            </button>
+                    </th>
+                    <th>
+                        <button class="sort" tabindex="0">
+                          País
+                          <svg width="13" viewBox="0 0 126 171">
+                            <path d="M62.7 3.9 6 70l114-.5z"/>
+                            <path d="M63 166.5 6 100.6h114z"/>
+                          </svg>
+                        </button>
+                      </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tokio</td>
+                    <td>37.115.035	</td>
+                    <td>Japón</td>
+                </tr>
+                <tr>
+                    <td>Delhi</td>
+                    <td>33.807.403</td>
+                    <td>India</td>
+                </tr>
+                <tr>
+                    <td>Shanghái</td>
+                    <td>29.867.918</td>
+                    <td>China</td>
+                </tr>
+                <tr>
+                    <td>Daca</td>
+                    <td>23.935.652</td>
+                    <td>Bangladesh</td>
+                </tr>
+                <tr>
+                    <td>Sao Paulo</td>
+                    <td>22.806.704</td>
+                    <td>Brasil</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <script src="tablas2.js"></script>
+</body>
+</html>

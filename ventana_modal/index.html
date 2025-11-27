@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChopinLiszt</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.2.0/uuid.min.js" integrity="sha512-X0CJvcClD8EXFn5Oq8BD5lIsznKDfxb0Sf9Wr8MCCTyAEWaAAxr0Jvm3qyofsmN7eSHMZ0PPQGjVKroLAfexrA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Inter+Tight&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Permanent+Marker&family=Silkscreen&display=swap" rel="stylesheet">
+          
+    <link rel="stylesheet" href="./css/listacompra.css">
+    <script src="./js/listacompra.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Ejemplo Ventana modal</h1>
+        <!--
+        <nav>
+            <ul></ul>
+        </nav>
+        -->
+    </header>
+    <main>
+        <section id="entradaDatos">
+             <button id="botonAnadir">Añadir</button>
+
+        </section>
+       
+    </main>
+
+    <aside>
+        <div id="cover"></div>
+
+        <div id="dialog" role="dialog" aria-labelledby="titulo" aria-describedby="descripcion" aria-hidden="true">
+            <a href="#mainmodal">saltar contenido</a>
+            <h2 id="titulo" >Añadir producto</h2>
+            <button id="botonCerrar" aria-label="close">&times;</button>
+
+            <div id="descripcion">Introduce los datos del producto. La marca y cantidad son opcionales. Pulsa Esc para salir</div>
+            <form id="formularioAnadir">
+                <label for="nombreProducto">Producto</label>
+                <input id="nombreProducto" type="text" placeholder="nombre del producto">
+                <label for="marcaProducto">Marca</label>
+                <select name="marcaProducto" id="marcaProducto">
+                    <option value="marca1">Marca 1</option>
+                    <option value="marca2">Marca 2</option>
+                    <option value="marca3">Marca 3</option>
+
+                </select>
+                <label for="cantidadProducto">Cantidad</label>
+                <input id="cantidadProducto" type="number" value="1">
+
+                <button id="botonGuardar" type="submit">Añadir a lista</button>
+                <button id="cancelar">Cancelar</button>
+                <!--<div>Posible mensaje de error </div>-->
+
+             </form>
+          </div>
+    </aside>
+    <br><a href="../../index.html#javascript">Volver al índice</a>
+
+</body>
+</html>
+
+
+
+
+
+
+

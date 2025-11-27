@@ -1,0 +1,37 @@
+.visually-hidden {
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+  td {
+    min-width: 8rem;
+  }
+
+  caption {
+    font-weight: bold;
+  }
+
+  .sort {
+    all: unset;
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+  }
+
+  .sort path {
+    fill: transparent;
+    stroke: currentColor;
+    stroke-width: 12;
+  }
+
+  [aria-sort="ascending"] path:first-child {
+    fill: currentColor;
+  }
+
+  [aria-sort="descending"] path:last-child {
+    fill: currentColor;
+  }

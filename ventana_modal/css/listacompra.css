@@ -1,0 +1,160 @@
+
+:root {
+  --color-primario: #065D50;
+  --color-secundario: #42473F;
+  --color-terciario: #000000;
+  --color-cuarto: #CCCCCC;
+  --color-quinto: #F6FC00;
+  --color-sexto: #f4f4f4;
+  --color-blanco: #FFFFFF;
+
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: var(--color-secundario);
+  font-size: 62,5%;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.sr-only {
+  position: absolute;
+  left: -15000px;
+}
+
+
+#paginaOfertas header {
+  display: flex;
+  flex-direction: column;
+}
+
+#paginaOfertas header section#cabecera {
+  background: var(--color-primario);
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-blanco);
+  padding: 20px;
+  text-align: center;
+}
+#paginaOfertas header section#cabecera a {
+  color: var(--color-blanco);
+}
+#paginaOfertas  h2 {
+  text-align: center;
+  margin: 0;
+  padding: 0.6rem;
+  background-color: var(--color-cuarto);
+}
+main{
+  padding: 20px;
+  margin-bottom: 60px;
+} 
+#listaCompra {
+    list-style-type: none;
+}
+
+#listaCompra li {
+    padding: 5px 10px;
+    border-bottom: 1px solid #CCCCCC;
+    display: flex;
+    justify-content: space-between;
+}
+.anadido {
+    text-decoration: line-through;
+    color: var(--color-primario);
+}
+
+.boton {
+    margin-right: 13px;
+    border-radius: 3px;
+    padding: 4px 6px 0;
+    background-color: var(--color-quinto);
+    color: var(--color-secundario);
+    border: 1px solid var(--color-primario);
+}
+
+.boton:focus-visible {
+  outline: 2px solid var(--color-primario);
+  outline-offset: 5px;
+}
+
+[role="dialog"] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 1em;
+    max-height: 80vh;
+    max-width: 80vw;
+    background: #ddd;
+    display: none;
+    border: 0;
+  }
+  
+  
+  [role="dialog"] * + * {
+    margin-top: 0.5em;
+  }
+  
+  #title {
+    font-weight: bold;
+  }
+  
+  button {
+    cursor: pointer;
+    background: var(--color-primario);
+    color: var(--color-blanco);
+    border: 0;
+    color: #fff;
+    padding: 0.125em 0.5em;
+  }
+  
+  button:focus, button:hover  {
+    outline: 2px solid var(--color-primario);
+    outline-offset: 5px;
+  }
+  button:focus-visible{
+    outline: 2px solid var(--color-primario);
+    outline-offset: 5px;
+  }
+  
+  #botonCerrar {
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+    margin-top: 0;
+    line-height: 1;
+  }
+  
+  [role="dialog"][open] {
+    display: block;
+  }
+  
+  #cover {
+    background: var(--color-secundario);
+    opacity: 0.75;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+  }
+
+  #formularioAnadir label, input {
+    display: block;
+  }
+
+
+  

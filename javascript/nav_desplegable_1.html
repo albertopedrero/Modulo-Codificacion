@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Accesible</title>
+    <link rel="stylesheet" href="./css/nav_desplegable_1.css">
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="primeros.html">Primeros</a></li>
+            <li class="dropdown">
+              <span class="spanButton">Segundos</span>
+                <ul id="dropdown-menu" class="dropdown-content">
+                    <li><a href="carnes.html">Carnes</a></li>
+                    <li><a href="pescados.html">Pescados</a></li>
+                </ul>
+            </li>
+            <li><a href="postres.html">Postres</a></li>
+        </ul>
+    </nav>
+
+    <script src="./js/nav_desplegable_1.js"></script>
+</body>
+</html>
